@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "target": "es5",// esnext es3
+    "module": "esnext", // 打包的模块类型
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "jsx": "preserve", // 控制jsx编译
+    // 定义使用的预定义类型
+    "lib": [
+      "DOM", // 浏览器
+      "ESNext" // 预置高级语法
+    ],
+    // 定义重新导出类型的时候，需要显示的导出 eg: export {typeSomeOne} => export type { typeSomeOne }
+    "isolatedModules": true,
+  },
+  "include": [
+    "src",
+    "build",
+    "typings"
+  ]
+}
